@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Список дел</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/deal-list.css">
+    <link rel="stylesheet" href="css/create-count.css">
+
+    <script defer src="js/jquery-3.4.1.min.js"></script>
+    <script defer src="js/script.js"></script>
+</head>
+
+<body>
+<main class="main container clearfix">
+    <h1 class="visually-hidden">Скрытый заголовок</h1>
+
+    <section class="deal-count js-deal-count">
+        <h2 class="title">Список дел:</h2>
+
+        <ul class="deal-list js-deal-list">
+        </ul>
+
+        <p class="empty-list js-empty-list">Список пуст</p>
+    </section>
+
+    <section class="create-count js-create-count">
+        <h2 class="title">Добавить новое дело</h2>
+
+        <form class="create__form js-create-form">
+            <label for="insert-title" class="label">*Название</label>
+            <textarea required class="insert-title js-insert-title" cols="46" rows="2" id="insert-title"></textarea>
+
+            <label for="insert-description" class="label">*Описание</label>
+            <textarea required class="insert-description js-insert-description" cols="46" rows="15" id="insert-description"></textarea>
+
+            <input type="submit" class="adddeal js-adddeal" value="Добавить дело">
+        </form>
+    </section>
+</main>
+</body>
+</html>

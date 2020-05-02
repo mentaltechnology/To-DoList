@@ -1,0 +1,47 @@
+html{
+	box-sizing: border-box; /*свойство, которое определяет размеры блока, где высота и ширина блока охватывает значения padding и border*/
+}
+*,
+*::before,
+*::after {
+	box-sizing: inherit; /*все элементы и псевдоэлементы before и after будут наследоваться у родительских элементов*/ 
+}
+body {
+	min-width: 1000px; /*минимальная ширина элемента. Если размер экрана меньше, будет отображаться видимая часть, а остальная будет доступна с полосой прокрутки*/ 
+	margin: 0; /*убирает все внешние отсупы элемента*/
+	font-family: "Arial", sans-serif; /*устанавливает семейство шрифта*/
+	line-height: 1.5em; /*междустрочный интервал*/ 
+	background-color:#f5f5f5;
+	color: black;
+	font-size: 16px;
+
+}
+body.modal-active{
+	overflow: hidden; /*полосы прокрутки для, вероятно, модального окна выбора города будут скрыты*/ 
+}
+a{
+	text-decoration: none; /*для ссылок убрано подчёркивание*/
+	color: inherit; /*цвет наследуется родителем*/
+}
+.container{
+	width: 960px; 
+	margin: 0 auto; 
+}
+.clearfix:after{ /*этот класс присоединяется к контейнерам, в которых имеются колонки, выровненные по краям (float)*/
+	display: table;/*устанавливает поведение элементу как таблице*/
+	clear: both; /*отменяет действие float*/
+	content: "";	
+}
+.visually-hidden{
+	position: absolute !important;
+	width: 1px !important; 
+	height: 1px !important;
+	padding:0 !important; 
+	border:0 !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	overflow: hidden;
+}
+img{
+	max-width: 100%;
+}

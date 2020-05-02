@@ -1,0 +1,48 @@
+.create-count{
+	width: 470px;
+
+	float: right;
+}
+	.create__form{
+		padding-top: 30px;
+		padding-left: 40px;
+		padding-right: 40px;
+		padding-bottom: 20px;
+
+		background-color: #ffffff;
+	}
+		
+		.label{
+			color: #8993ad;
+		}
+		
+		.insert-title,
+		.insert-description{
+			margin-top: 10px;
+			margin-bottom: 10px;
+			border: 2px solid #f6f6f6;
+
+			background-color: #fcfcfc;
+		}
+
+		.adddeal{
+			min-width: 220px;
+
+			margin-top: 20px;
+
+			padding-top: 20px;
+			padding-bottom: 20px;
+			
+
+			/*width: 200px;*/
+
+			background-color: #2174fd;
+
+			border: 1px #f6f6f6; 
+
+			color: #ffff;	
+		}
+			.submit-text{
+				margin-top: 30px;
+			}
+

@@ -1,0 +1,87 @@
+.main{
+	margin-top: 65px;
+}
+
+.title{
+	font-weight: lighter;
+	margin-top: 0;
+}
+
+.deal-count{
+	width: 470px;
+
+	float: left;
+}
+	.deal-list{
+		margin: 0;
+
+		padding-left: 0;
+
+		list-style-type: none;
+	}
+		.deal-list__item{
+			margin-bottom: 20px;
+
+			background-color: #ffffff;
+		}
+			.item__header{
+				padding-top: 5px;
+				padding-bottom: 5px;
+				padding-left: 20px;
+
+				border-bottom: 0.5px solid #e5e5e8;
+			}
+
+			.item__title{			
+				margin: 0;
+
+				display: inline-block; 
+
+				font-size: 16px;
+				font-weight: lighter;
+
+				vertical-align: sub;
+			}
+
+			.close,
+			.skip{
+				width: 25px;	
+				height: 25px;
+
+				padding: 20px;
+
+				background-repeat: no-repeat;
+				background-color: #ffff;
+				background-position: center;
+
+				border: 0;
+			}
+			.close{
+				margin-left: 25px;
+
+				background-image: url("../img/close.png");	
+			}
+
+			.skip{
+				float: right;
+				transition: 0.2s;
+				background-image: url("../img/skip.png");
+			}
+
+				.skip.active{
+					transform: rotate(180deg);
+				}
+
+			.item__description{
+				margin: 0;
+				padding-top: 11px;
+				padding-left: 20px;
+				padding-right: 20px;
+				padding-bottom: 50px;
+
+				color: #8993ad;
+			}
+
+	.empty-list{
+		color: #8993ad;
+	}
